@@ -1,2 +1,12 @@
 %p
-  Results found
+  Results found: 
+.results
+  - if @hotels.any?
+    %table.hotel-list-table
+      %thead
+        %tr
+          %th Name
+      %tbody
+        - @hotels.each do |hotel|
+          %tr
+            %td= hotel.name
