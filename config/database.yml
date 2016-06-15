@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  username:
+  password:
+
+development:
+  <<: *default
+  database: booking_development
+
+test:
+  <<: *default
+  database: booking_test
