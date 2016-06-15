@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=fake_google_api_key&keyword=&language=&location=52.51515110,13.34271310&name=hotels&radius=1000&rankby=
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=fake_google_api_key&keyword=&language=&location=52.51515110,13.34271310&name=hotels&radius=5000&rankby=
     body:
       encoding: US-ASCII
       string: ''

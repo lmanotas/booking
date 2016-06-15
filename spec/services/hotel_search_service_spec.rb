@@ -2,20 +2,6 @@ require 'spec_helper'
 
 describe HotelSearchService do
 
-  describe 'Configuration' do
-    context 'Using custom configuration' do
-      before do
-        described_class.configure do |c|
-          c.search_criteria = 'hostels'
-          c.search_radius = 200
-        end
-      end
-
-      it{ expect(described_class.search_criteria).to eq('hostels') }
-      it{ expect(described_class.search_radius).to eq(200) }
-    end
-  end
-
   describe 'Searching Hotels' do
     let(:search_criteria){ described_class.search_criteria }
     let(:radius){ described_class.search_radius }
