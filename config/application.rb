@@ -24,5 +24,7 @@ module ConichiBooking
     config.active_record.raise_in_transactional_callbacks = true
     # Autoloading app/services dir
     config.autoload_paths << "#{Rails.root}/app/services"
+    # Autoloading lib/*.rb
+    config.autoload_paths << "#{Rails.root}/lib"
   end
 end
