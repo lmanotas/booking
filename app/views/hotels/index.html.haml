@@ -10,3 +10,5 @@
         - @hotels.each do |hotel|
           %tr
             %td= hotel.name
+          %tr
+            %td= link_to "Book Hotel", new_hotel_booking_path(hotel.place_id)
