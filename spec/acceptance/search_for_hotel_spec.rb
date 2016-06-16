@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 feature 'Search for Hotel near me', type: :feature do
-  use_vcr_cassette "hotels_list"
+  use_vcr_cassette 'hotels_list'
 
   scenario 'User Clicks on Search button' do
     visit '/'
