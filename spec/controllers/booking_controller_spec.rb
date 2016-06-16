@@ -22,7 +22,7 @@ describe BookingController do
   end
 
   describe 'Create Booking' do
-    use_vcr_cassette 'hotels_list'
+    use_vcr_cassette 'google_places'
 
     context 'Show successfull Booking page when booking is created' do
       before { post :create, params_collection }

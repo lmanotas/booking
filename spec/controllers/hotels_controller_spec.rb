@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe HotelsController do
   context 'index list' do
-    use_vcr_cassette 'hotels_list'
+    use_vcr_cassette 'google_places'
     
     before { get :index, {lat: 52.51515110, lon: 13.34271310} }
 

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 feature 'Book hotel from result list', type: :feature do
-  use_vcr_cassette 'hotels_list'
+  use_vcr_cassette 'google_places'
 
   scenario 'User Clicks on Search button' do
     visit '/'
